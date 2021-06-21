@@ -6,7 +6,7 @@ class Player extends MySprite {
         this.doubleJump = false;
         this.spriteDoubleJump = undefined;
 
-        //Cantidad de vidad y velocidad del player
+        //Cantidad de vida, cantidad de disk tomados y velocidad del player
         this.health = 3;
         this.speed = 10;
         this.disk=0;
@@ -129,6 +129,7 @@ class Player extends MySprite {
         this.scene.timeGame = this.scene.timeGameReal;
     }
 
+    //Incremento de disk tomados
     UpDisk()
     {
         this.disk++;

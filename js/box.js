@@ -6,6 +6,7 @@ class Box extends MySprite {
         this.speed = 5;
     }
 
+    //Se mueve la caja cuando es tocado a la izquierda o derecha de la caja.
     update(time, delta) {
         if (this.body.touching.left) {
             this.setVelocityX(this.speed * delta);
@@ -17,6 +18,7 @@ class Box extends MySprite {
             else
                 this.setVelocityX(0);
 
+        //si la caja se cae de la plataforma, se hace invisible.
         if (this.y > 550) {
             this.visible=false;
         }
