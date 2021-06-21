@@ -1,10 +1,12 @@
 
 class MainScene extends Phaser.Scene {
 
+    //Se coloca un nombre para realizar el reiniciado del nivel
     constructor() {
         super("main");
     }
 
+    //objetos precargados en el nivel.
     preload() {
         this.load.image('tiles', 'res/Tileset.png');
         this.load.tilemapTiledJSON('map', 'res/Map_city2.json');
@@ -39,15 +41,14 @@ class MainScene extends Phaser.Scene {
         this.createLoop(this, 3, 'background_1', 0.5);
         this.createLoop(this, 3, 'background_2', 0.75);
 
+        //tiempo límite que tiene el nivel
         this.timeGameReal = 200;
         this.timeGame = this.timeGameReal;
 
-        this.restartGame = false;
-
+        //Carga los objetos a la escena
         this.IniciarLevel();
 
-
-        //Vidas del jugador
+        //Vidas del jugador y casset que se van tomando o pediendo
         var points = this.add.sprite(85, 54, 'points').setScrollFactor(0);
         this.heart = this.add.sprite(60, 35, 'sprites_corazon');
         this.heart.setScale(0.50);
@@ -57,19 +58,21 @@ class MainScene extends Phaser.Scene {
         this.disk.setScale(0.75);
         this.disk.setScrollFactor(0);
 
-        //Total de puntos que va recogiendo en escenario
+        //Visualiza las vidas que tiene el jugador
         this.heartText = this.add.text(80, 21, 'x ' + this.player.health, {
             fontSize: '20px',
             fill: '#fff',
             fontFamily: 'verdana, arial, sans-serif'
         });
 
+        //Cantidad de objetos tomados en el nivel
         this.diskText = this.add.text(80, 49, 'x ' + this.player.disk, {
             fontSize: '20px',
             fill: '#fff',
             fontFamily: 'verdana, arial, sans-serif'
         });
 
+        //Visualización del tiempo del nivel
         this.timeText = this.add.text(650, 20, 'Time:  ' + this.timeGame, {
             fontSize: '20px',
             fill: '#fff',
@@ -81,7 +84,7 @@ class MainScene extends Phaser.Scene {
         this.diskText.setScrollFactor(0);
         this.timeText.setScrollFactor(0);
 
-
+        //Mensaje para que el usuario sepa que debe hacer en el nivel
         this.textMensaje = this.add.text(17, 173, '!Debo conseguir los 10 \npara poder escapar\nde este mundo.!', {
             fontSize: '12px',
             fill: '#000',
@@ -91,10 +94,10 @@ class MainScene extends Phaser.Scene {
         this.disk1.setScale(0.5);
         this.ocultarMsn = false;
 
-        //this.time.events.loop(Phaser.Timer.SECOND, this.showTime, this);
     }
 
 
+    //Método para cargar todos los objetos en pantalla.
     IniciarLevel() {
         var map = this.make.tilemap({ key: 'map' });
         var tiles = map.addTilesetImage('Tileset', 'tiles');
@@ -111,6 +114,7 @@ class MainScene extends Phaser.Scene {
         //enable collisions for every tile
         this.layerGround.setCollisionByExclusion(-1, true);
 
+        //Imagen que presenta el mensaje de lo que tiene que realizar el jugador
         this.mensaje = this.add.sprite(100, 205, 'mensaje');
         this.mensaje.setScale(0.50);
 
@@ -120,6 +124,7 @@ class MainScene extends Phaser.Scene {
         this.finish.setScale(0.3);
         this.finish.visible = false;
 
+        //Fuegos artificiales
         this.fuego = new FuegosArtificiales(this, 1680, 155);
         this.fuego.visible = false;
 
@@ -132,14 +137,19 @@ class MainScene extends Phaser.Scene {
 
         this.physics.add.overlap(this.finish, this.player, this.finishGame, null, this);
 
+        //Inicia a los enemigos, cajas, doble saltos y cassets o discos.
         this.IniciarDiskBootEnemy(false);
     }
 
+    //Método para inciar los enemigos, cajas, doble salto, cassets, cuando reinicia el nivel o cuando revive cuando muere
     IniciarDiskBootEnemy(reset) {
+
+        //Reinicia los objetos si es necesario.
         if (reset == true) {
             this.Reset();
         }
         var map = this.make.tilemap({ key: 'map' });
+
         //creacion de los discos colectables
         var objectsJSON = map.getObjectLayer('Disks')['objects'];
         this.disks = [];
@@ -172,6 +182,7 @@ class MainScene extends Phaser.Scene {
             }
         }
 
+        //Creación de cajas para poder empujar o subirse para poder saltar más alto.
         this.boxs = [];
         this.boxs.push(new Box(this, 1100, 195));
         this.boxs.push(new Box(this, 1600, 195));
@@ -179,6 +190,7 @@ class MainScene extends Phaser.Scene {
         this.physics.add.collider(this.boxs, this.layerGround);
     }
 
+    //Reinicio de todo los objetos que interactua con el jugador
     Reset() {
 
         if (this.disks != undefined && this.disks.length != 0) {
@@ -204,6 +216,7 @@ class MainScene extends Phaser.Scene {
         }
 
         this.player.disk = 0;
+        //Visualiza la cantidad de objetos y vidas que tiene el jugador
         this.showDisk();
         this.showHeart();
     }
@@ -218,7 +231,7 @@ class MainScene extends Phaser.Scene {
         }
     }
 
-    //función toma de disk para incrementar el puntaje y destruir el objeto
+    //función toma de disk para incrementar la cantidad y destruir el objeto
     spriteHit(sprite1, sprite2) {
         sprite1.destroy();
         sprite2.UpDisk();
@@ -239,7 +252,7 @@ class MainScene extends Phaser.Scene {
         }
     }
 
-    //Función para presentar en pantalla Finish, cuando toca la bandera
+    //Función para presentar en pantalla Winner, cuando toca la bandera
     finishGame(sprite1, sprite2) {
         if (this.player.disk == 10) {
             sprite1.destroy();
@@ -252,6 +265,8 @@ class MainScene extends Phaser.Scene {
     GameOver() {
         this.ViewMessajeFinal('GAME OVER');
     }
+
+    //presenta el mensaje de Winner o Gamer Over de acuerdo al parámetro enviado
 
     ViewMessajeFinal(mensaje) {
         this.showHeart();
@@ -271,7 +286,7 @@ class MainScene extends Phaser.Scene {
             fontFamily: 'verdana, arial, sans-serif'
         }).setOrigin(0.5);
 
-        //Boton replay para reiniciar el juego, pero no se encuentra implementado
+        //Boton replay para reiniciar el juego.
         var returnButton = this.add.sprite(x, this.screenCenterY + 80, 'sprites_return').setOrigin(0.5);
         returnButton.setScale(0.30);
 
@@ -294,6 +309,7 @@ class MainScene extends Phaser.Scene {
         sprite1.setPosition(40, 130).setScrollFactor(0);
     }
 
+    //MOvimiento de player, bird y fuegos artificiales
     update(time, delta) {
         this.player.update(time, delta);
         for (let i = 0; i < this.birds.length; i++) {
@@ -310,11 +326,12 @@ class MainScene extends Phaser.Scene {
 
     }
 
-    //Función para visualizar el puntaje en el escenario
+    //Función para visualizar la cantidad de vidas
     showHeart() {
         this.heartText.setText('x ' + this.player.health);
     }
 
+    //Función para visualizar la cantidad de objetos disk tomados
     showDisk() {
         this.diskText.setText('x ' + this.player.disk);
         if (this.player.disk == 10) {
@@ -322,16 +339,19 @@ class MainScene extends Phaser.Scene {
         }
     }
 
+    //Función para visualizar el tiempo en pantalla
     showTime() {
         if (this.player.visible == true) {
             this.timeGame -= 0.015;
             this.timeText.setText('Time: ' + Math.round(this.timeGame));
+            //Si el tiempo es cero, el jugador pierde una vida
             if (this.timeGame <= 0) {
                 this.player.Damaged();
             }
         }
     }
 
+    //Oculta el mensaje inicial al momento que el jugado se mueve
     OcultarMensaje(ban) {
         if (this.mensaje.visible != ban) {
             this.mensaje.visible = ban;

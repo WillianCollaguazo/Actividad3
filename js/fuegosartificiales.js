@@ -12,6 +12,7 @@ class FuegosArtificiales extends MySprite {
         });
     }
 
+    //Animación de fuegos artíficiales al terminar el juego
     update(time, delta) {
         this.play('winner', true);
     }
