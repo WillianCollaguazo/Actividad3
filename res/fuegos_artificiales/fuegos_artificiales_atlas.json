@@ -1,0 +1,333 @@
+{
+    "frames": [
+        {
+            "filename": "fuegos_artificiales_0",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 0,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_1",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 0,
+                "y": 194
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_2",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 200,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_3",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 200,
+                "y": 194
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_4",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 0,
+                "y": 388
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_5",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 200,
+                "y": 388
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_6",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 400,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_7",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 400,
+                "y": 194
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_8",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 400,
+                "y": 388
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_9",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 0,
+                "y": 582
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_10",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 200,
+                "y": 582
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_11",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 400,
+                "y": 582
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_12",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 600,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_13",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 600,
+                "y": 194
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_14",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 600,
+                "y": 388
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_15",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 600,
+                "y": 582
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_16",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 0,
+                "y": 776
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_17",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 200,
+                "y": 776
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_18",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 400,
+                "y": 776
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_19",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 600,
+                "y": 776
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_20",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 800,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_21",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 800,
+                "y": 194
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_22",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 800,
+                "y": 388
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_23",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 800,
+                "y": 582
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "fuegos_artificiales_24",
+            "frame": {
+                "w": 200,
+                "h": 194,
+                "x": 800,
+                "y": 776
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}

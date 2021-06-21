@@ -1,0 +1,44 @@
+{
+    "anims": [
+        {
+            "key": "run",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "ave",
+                    "frame": "vuela_1"
+                },
+                {
+                    "key": "ave",
+                    "frame": "vuela_2"
+                },
+                {
+                    "key": "ave",
+                    "frame": "vuela_3"
+                },
+                {
+                    "key": "ave",
+                    "frame": "vuela_4"
+                },
+                {
+                    "key": "ave",
+                    "frame": "vuela_5"
+                },
+                {
+                    "key": "ave",
+                    "frame": "vuela_6"
+                },
+                {
+                    "key": "ave",
+                    "frame": "vuela_5"
+                },
+                {
+                    "key": "ave",
+                    "frame": "vuela_4"
+                }
+            ]
+        }
+    ]
+}

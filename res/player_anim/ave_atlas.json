@@ -1,0 +1,115 @@
+{
+    "frames": [
+        {
+            "filename": "vuela_1",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 0,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "vuela_2",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 50,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "vuela_3",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 100,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "vuela_4",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 150,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "vuela_5",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 200,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "vuela_6",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 250,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+        ,
+        {
+            "filename": "vuela_7",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 200,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+        ,
+        {
+            "filename": "vuela_8",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 150,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+        
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "anims": [
+        {
+            "key": "fuegosartificiales",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_1"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_2"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_3"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_4"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_5"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_6"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_7"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_8"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_9"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_10"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_11"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_12"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_13"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_14"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_15"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_16"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_17"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_18"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_19"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_20"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_21"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_22"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_23"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_24"
+                },
+                {
+                    "key": "fuegos_artificiales",
+                    "frame": "fuegos_artificiales_0"
+                }
+            ]
+        }
+    ]
+}
